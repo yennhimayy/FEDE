@@ -1,0 +1,23 @@
+header
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		img 
+			max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+			max-height: 3rem
+		ul 
+			li
+				a
+					padding: .5rem 1rem !important
+					color: $brown-black
+					font-weight: bold
+					// font-size: 1.2rem
+					&:hover
+						background: $ngoc
+						color: $whites !important
+						
+
+

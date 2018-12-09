@@ -1,0 +1,101 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home1
+		.owl-carousel.owl-theme
+			-for(x=1;x<4;x++)
+				.item
+					img(src="./img/home_slide_1.png", alt="#")
+						.title
+							.container
+								.row
+									.col-md-8.offset-md-2
+										h1 Chúng tôi là FullStack Vietnam
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae ipsam dolorem, explicabo iste quisquam assumenda recusandae odio officiis quis.
+	section.home_new
+		.container
+			.row
+				.col
+					h2 tin tức
+			.row
+				-for(x=1;x<4;x++)
+					.col-lg-4.col-md-6.col-sm-6
+						a(href="")
+							figure
+								.box
+									img.img-fluid.w-100(src="./img/home_new_"+x+".png", alt="")
+								figcaption
+									h4.mt-4 Trung tâm đào tạo IT chuyên nghiệp
+									time 22/2/2222
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae laborum accusamus deserunt at eaque quidem eos sed placeat reiciendis.
+
+	section.home_3
+			.container
+				.row
+					.col.center
+						h2 định hướng phát triển
+				.row
+					-for(x=1;x<5;x++)
+						.col-lg-3.col-md-6.col-sm-12
+							a(href="#")
+								.mat
+									i.fa.fa-file-powerpoint-o
+									h5 Tầm nhìn
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque amet praesentium odit sequi pariatur adipisci quaerat eveniet quis magnam harum?
+	section.home_4
+		.container
+			.row
+				.col-md-8.offset-md-2.text-center
+					h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, molestiae in iusto blanditiis odio repellendus repellat? Repellendus velit consequuntur
+					a.btn.btn-nhi(href="#") xem chi tiết
+	section.home_5
+		.container
+			.row
+				.col.text-center
+					h2 định hướng phát triển
+					nav
+						ul
+							li 
+								a(href="#") tất cả
+							li 
+								a(href="#") group
+							li 
+								a(href="#") thị trường
+							li 
+								a(href="#") tin vịt
+			.row
+				-for(x=1;x<4;x++)
+					.col-lg-4.col-md-6.col-sm-6
+						a(href="")
+							figure
+								.box
+									img.img-fluid.w-100(src="./img/home_new_"+x+".png", alt="")
+	section.home_6
+		.owl-carousel.owl-theme
+			-for(x=1;x<4;x++)
+				.item
+					.container
+						.row
+							.col
+								h2 khách hàng nói
+						.row
+							.col-md-8.offset-md-2.text-center
+								figure
+									.box
+										img(src="./img/kh.png", alt="#")
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dicta sint et modi, deleniti saepe eligendi quaerat maiores! Deleniti, ratione? Fugiat dicta sint et modi, deleniti saepe eligendi quaerat maiores! Deleniti, ratione?
+						.row
+							.col-md-8.offset-md-2.text-center
+								h4 Pelican Steve
+								p.abc DEVELOPER ABC Company
+			
+
+

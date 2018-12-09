@@ -1,0 +1,340 @@
+// ---------MIXI N---------
+=pad()
+	padding: 6rem 0
+=tran()
+	transition: .5s all ease-in-out
+=bef()
+	&:before
+		content: ""
+		width: 80px
+		height: 4px
+		background: $ngoc
+		position: absolute
+		bottom: -15px
+		left: 50%
+		transform: translateX(-50%)
+=aft()
+	&:after
+		content: ""
+		width: 19px
+		height: 19px
+		border-radius: 50%
+		background: $whites
+		border: solid 4px $ngoc
+		position: absolute
+		bottom: -22px
+		left: 50%
+		transform: translateX(-50%)
+=texth2()
+	text-align: center
+	margin-bottom: 5rem
+	position: relative
+	text-align: center
+	align-items: center
+	text-transform: uppercase
+	font-weight: bold
+// --------BLOCK1---------	
+.home1
+	.owl-carousel
+		.item
+			img 
+				width: 100%
+				height: 100%
+				display: flex
+			.title
+				h1,p
+					text-align: center
+					margin-top: 1rem
+				h1
+					font-size: 1.3rem
+				p 
+					font-size: 0.9rem
+		.owl-nav
+			margin: 0
+			button
+				background: $ngoc
+				border-radius: 0
+				&:hover
+					background: $ngoc
+				&:focus
+					outline: none
+				i 
+					font-size: 0.9rem
+					width: 3rem
+					height: 3rem
+					line-height: 3rem
+					color: #ffff
+				
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.item
+				position: relative
+				.title
+					margin: 0
+					bottom: 0
+					position: absolute
+					width: 100%
+					background-image: linear-gradient(#fffefe00, black)
+					padding: 2rem
+					h1,p 
+						text-shadow: 2px 2px 3px rgba(0, 0, 0, .5)
+						color: #ffffff
+					h1
+						font-size: 3rem
+						line-height: 2.3rem
+					
+					p 
+						font-size: 1.5rem
+						line-height: 2.3rem
+			.owl-nav
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				width: 100%
+				.owl-prev
+					left: 2rem
+					position: absolute
+					transform: translateY(-50%)
+				.owl-next
+					right: 2rem
+					position: absolute
+					transform: translateY(-50%)
+
+--------BLOCK2---------
+.home_new
+	+pad()
+	h2
+		position: relative
+		+texth2()
+		+bef()
+		+aft	
+	a 
+		text-decoration: none
+		margin-bottom: 1rem 
+		figure
+			
+			.box
+				width: 100%
+				height: 100%
+				overflow: hidden
+				position: relative
+				&:before
+					content: ""
+					display: block
+					width: 100%
+					height: 100%
+					position: absolute
+					z-index: 1
+					+tran()
+				img 
+					filter: grayscale(100%)
+					+tran()
+			h4 
+				color: $blacks
+				+tran()
+			time 
+				color: $silver
+			p 
+				margin-top: 1rem
+				margin-bottom: 2rem
+				color: $silver
+				+tran()
+		&:hover
+			.box
+				&:before 
+					box-shadow: 0px 0px 0px 4px inset $ngoc 
+				img 
+					filter: grayscale(0%)
+					transform: scale(1.3)
+			h4 
+				color: $ngoc
+			p
+				color: $blacks
+// --------BLOCK3---------
+.home_3
+	+pad()
+	background-image: url('../img/bg_1.png')
+	min-height: 60vh
+	display: flex
+	background-attachment: fixed
+	background-position: center center
+	background-size: cover
+	h2
+		+texth2()
+		+bef()
+		+aft()
+	a 
+		text-decoration: none
+		.mat
+			i 
+				font-size: 5rem
+				margin-top: 3rem
+				color: $blacks
+				+tran()
+			h5 
+				color: $blacks
+				margin: 2rem 0 1rem 0
+				text-transform: uppercase
+				+tran()
+				font-weight: 700
+			p 
+				color: darken(#fff, 50%)
+				margin-bottom: 0rem
+		&:hover
+			i 
+				color: $ngoc
+			h5 
+				color: $ngoc
+.home_4
+	+pad()
+	background-image: url('../img/bg_2.png') 
+	background-attachment: fixed
+	background-position: center center
+	background-size: cover
+	min-height: 50vh
+	h3
+		color: $whites
+		font-size: 1.2rem
+		text-align: center
+		line-height: 1.8rem
+		font-weight: 400
+	a 
+		color: #ffffff
+		text-transform: uppercase
+		background: $ngoc
+		margin-top: 2rem
+		padding: .5rem 2.5rem
+		border-radius: 2rem
+		font-weight: bold
+		font-size: 1rem
+		&:hover
+			background: $sun-flower
+	+media-breakpoint-up(md)
+		h3
+			color: $whites
+			font-size: 1.7rem
+			text-align: center
+			line-height: 2rem
+			font-weight: 400
+		a 
+			color: #ffffff
+			text-transform: uppercase
+			background: $ngoc
+			margin-top: 2.5rem
+			padding: 1rem 4rem
+			border-radius: 2rem
+			font-weight: bold
+			font-size: 1.2rem
+			&:hover
+				background: $sun-flower
+
+.home_5
+	+pad()
+	h2
+		text-align: center
+		margin-bottom: 4rem
+		position: relative
+		text-align: center
+		align-items: center
+		text-transform: uppercase
+		font-weight: bold
+		+bef()
+		+aft()
+	ul 
+		display: flex
+		text-align: center
+		justify-content: center
+		padding-left: 0
+		margin-bottom: 2rem
+		li 
+			display: block
+			a 
+				text-decoration: none
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 1rem
+				padding: .5rem 1rem
+				color: $blacks
+				&:hover
+					background: $ngoc
+					border-radius: 2rem
+					color: #fff
+			+media-breakpoint-up(md)
+				a	
+					font-size: 1.2rem
+	a 
+		figure 
+			.box
+				width: 100%
+				height: 100%
+				overflow: hidden
+				position: relative
+				
+				&:before
+					content: ''
+					position: absolute
+					display: block
+					width: 100%
+					height: 100%
+					z-index: 2
+					+tran()
+				img 
+					filter: grayscale(100%)
+					+tran()
+		&:hover
+			.box
+				&:before 
+					box-shadow: 0px 0px 0px 4px inset $ngoc 
+				img 
+					filter: grayscale(0%)
+.home_6
+	+pad()
+	background: url('../img/bg.png') center center no-repeat
+	background-attachment: fixed
+	background-size: cover
+	min-height: 100vh
+	.owl-carousel
+		.item
+			h2
+				+texth2()
+				+bef()
+				+aft()
+			figure 
+				text-align: -webkit-center
+				margin-bottom: 0
+				.box
+					height: 150px
+					width: 150px
+					overflow: hidden
+					border-radius: 50%
+					border: solid 4px $ngoc
+					margin-right: 0
+			p
+				margin: 1.5rem 0 2.5rem 0
+				color: darken(#fff, 50%)
+				z-index: 30
+				font-size: 1.2rem
+				font-style: italic
+				font-weight: 500
+			h4 
+				color: $ngoc
+				margin-bottom: 0
+			.abc 
+				font-style: normal
+				color: darken(#fff, 80%)
+				margin: 0
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
