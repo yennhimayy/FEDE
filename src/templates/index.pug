@@ -14,17 +14,17 @@ block body
 			-for(x=1;x<4;x++)
 				.item
 					img(src="./img/home_slide_1.png", alt="#")
-						.title
-							.container
-								.row
-									.col-md-8.offset-md-2
-										h1 Chúng tôi là FullStack Vietnam
-										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae ipsam dolorem, explicabo iste quisquam assumenda recusandae odio officiis quis.
+					.title
+						.container
+							.row
+								.col-md-8.offset-md-2
+									h1 Chúng tôi là FullStack Vietnam
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae ipsam dolorem, explicabo iste quisquam assumenda recusandae odio officiis quis.
 	section.home_new
 		.container
 			.row
 				.col
-					h2 tin tức
+					h2 tin tức 
 			.row
 				-for(x=1;x<4;x++)
 					.col-lg-4.col-md-6.col-sm-6
@@ -96,6 +96,14 @@ block body
 							.col-md-8.offset-md-2.text-center
 								h4 Pelican Steve
 								p.abc DEVELOPER ABC Company
-			
+	section.home_7
+		.owl-carousel.owl-theme
+			.item
+				.container
+					.row
+						-for(x=1;x<7;x++)
+							.col-md-2
+								img(src="./img/clients_"+x+".png", alt="")
+
 
 

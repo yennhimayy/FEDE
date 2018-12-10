@@ -48,10 +48,11 @@ $(document).ready(function () {
         loop: false
         // navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     });
-    $('.home-clients .owl-carousel').owlCarousel({
+    $('.home-7 .owl-carousel').owlCarousel({
         items: 1,
         nav: true,
         dots: false,
+        loop: true,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
         responsive: {
             480: {
